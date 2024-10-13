@@ -2,11 +2,11 @@
 
 Our site has <%= Todo.public_count %> todos and counting!
 
-<ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 16px;">
+<ul>
   <% @todos.each do |todo| %>
     <% unless todo.archived? %>
       <li style="display: flex; flex-direction: column; gap: 8px; border: 1px solid #999; border-radius: 4px; padding: 10px;">
-        <div style="font-weight: bold;">
+        <div class="text-blue-800" style="font-weight: bold;">
           <%= link_to todo.title, todo %>
         </div>
         <div>
