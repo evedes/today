@@ -1,15 +1,22 @@
-<h1>TODOS</h1>
+<div class="text-sm text-gray-800 py-4">
+  <h2 class="text-lg">TODOS</h2>
 
-Our site has <%= Todo.public_count %> todos and counting!
+  <div class="flex justify-between">
+  <div>Count <%= Todo.public_count %></div> 
+    <div class="font-bold underline text-indigo-800 hover:text-indigo-700">
+    <%= link_to "New Todo", new_todo_path %>
+    </div>
+  </div>
+</div>
 
-<ul>
+<ul class="flex flex-col gap-8">
   <% @todos.each do |todo| %>
     <% unless todo.archived? %>
-      <li style="display: flex; flex-direction: column; gap: 8px; border: 1px solid #999; border-radius: 4px; padding: 10px;">
-        <div class="text-blue-800" style="font-weight: bold;">
+      <li class="border border-gray-300 rounded p-4">
+        <div class="font-bold underline text-indigo-800 hover:text-indigo-700">
           <%= link_to todo.title, todo %>
         </div>
-        <div>
+        <div class="pt-4">
           <%= todo.description %>
         </div>
       </li>
@@ -17,5 +24,4 @@ Our site has <%= Todo.public_count %> todos and counting!
   <% end %>
 </ul>
 
-<%= link_to "New Todo", new_todo_path %>
 
