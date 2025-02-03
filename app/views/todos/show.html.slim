@@ -1,0 +1,8 @@
+.container.mx-auto.px-4.py-8
+  .bg-white.shadow-lg.rounded-lg.p-6
+    h1.text-3xl.font-bold.mb-6 = @todo.title
+
+    = link_to todos_path, class: "inline-flex items-center px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-lg transition-colors" do
+      svg.w-4.h-4.mr-2 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"
+      | Back to Todos

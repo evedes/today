@@ -1,0 +1,11 @@
+= render Header.new(title: "Today")
+
+.container.mx-auto.px-4
+  #todos.space-y-4
+    - @todos.each do |todo|
+      = render Card.new do |card|
+        - card.with_body
+          .flex.justify-between.items-center
+            h2.text-lg.font-semibold = todo.title
+            = link_to todo_path(todo), class: "text-blue-600 hover:text-blue-800"
+              | View Details
