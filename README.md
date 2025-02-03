@@ -6,11 +6,12 @@ Just another Todo List, to learn Ruby on Rails.
 
 Ruby: 3.2.2
 
-## Gems
+## Relevant Gems
 
 - Slim
 - Tailwind CSS
 - ViewComponent
+- Lookbook
 
 ## Run development server
 

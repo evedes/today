@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag "tailwind", "data-turbo-track": "reload"
+    = stylesheet_link_tag "application", "data-turbo-track": "reload"
+  body.bg-gray-100
+    .p-8
+      = yield 
