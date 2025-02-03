@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## What?
 
-Things you may want to cover:
+Just another Todo List, to learn Ruby on Rails.
 
-* Ruby version
+Ruby: 3.2.2
 
-* System dependencies
+## Gems
 
-* Configuration
+- Slim
+- Tailwind CSS
+- ViewComponent
 
-* Database creation
+## Run development server
 
-* Database initialization
+```bash
+bundle install
 
-* How to run the test suite
+./bin/dev
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You'll see puma starting a single node.
